@@ -1,5 +1,6 @@
 console.log("Cucumber configuration load test");
-
+import dotenv from 'dotenv';
+dotenv.config();
 const config = {
   import: ['src/**/*.ts'],
   format: [

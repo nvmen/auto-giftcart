@@ -19,8 +19,8 @@ const options: reporter.Options = {
   launchReport: true,
   metadata: {
     'App Version': '1.0.0',
-    'Test Environment': 'Test',
-    'Browser': 'Chrome',
+    'Test Environment': process.env.ENVIRONMENT ?? 'Development',
+    'Browser': process.env.BROWSER ?? 'firefox',
     'Platform': process.platform,
     'Parallel': 'Scenarios',
     'Executed': 'Remote'
@@ -33,4 +33,4 @@ try {
   console.log('HTML report generated successfully!');
 } catch (error) {
   console.error('Error generating HTML report:', error);
-} 
+}

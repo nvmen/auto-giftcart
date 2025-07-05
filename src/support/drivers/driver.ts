@@ -63,7 +63,9 @@ async function createEdgeDriver(): Promise<ThenableWebDriver> {
 }
 
 async function createDriverForTesting(): Promise<ThenableWebDriver> {
+  console.log('Creating driver for testing...' + process.env.BROWSER);
   const browser = process.env.BROWSER ?? 'firefox';
+  console.log(`Creating driver for browser: ${browser}`);
   switch (browser) {
     case 'firefox':
       return createFireFoxDriver();

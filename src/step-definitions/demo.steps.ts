@@ -2,7 +2,7 @@ import { Given, setDefaultTimeout } from '@cucumber/cucumber';
 import { ICustomWorld } from '../support/custom-world';
 import { Key } from 'selenium-webdriver';
 import { logStep } from '../support/logger';
-import assert from 'assert';
+// import assert from 'assert';
 setDefaultTimeout(10000); // 10 seconds
 Given('I open the browser {string}', { timeout: 60000 }, async function (this: ICustomWorld, name: string): Promise<void> {
   const driverPage = this.driver;
