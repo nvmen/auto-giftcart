@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Starter project to write and debug cucumber-js features with Selenium",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "cucumber": "npx cucumber-js",
+    "cucumber": "tsx node_modules/@cucumber/cucumber/bin/cucumber.js",
     "build": "rimraf build && npm run format && npm run lint && tsc && npm run cucumber-check",
     "format": "prettier --write \"**/*.{ts,tsx,css,html}\" ",
     "lint": "eslint --fix",
