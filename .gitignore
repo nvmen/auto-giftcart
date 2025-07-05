@@ -72,4 +72,6 @@ traces/
 build
 dist/
 docs/
-node_modules
+reports/
+reports/*
+node_modules/
