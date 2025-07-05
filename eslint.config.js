@@ -19,7 +19,7 @@ export default tseslint.config(
       '**/{www,dist,build}/**/*.*',
       'projects/*/!(src)/**/*.*',
       `!(${includedFolders.join(',')})/**/*.*`,
-      '!*.{js,ts,mjs,cjs}', 'cucumber.js'
+      '!*.{js,ts,mjs,cjs}', 'cucumber.js', 'src/support/logger.ts'
     ]
   },
   {

@@ -18,7 +18,7 @@ export class CustomWorld extends World implements ICustomWorld {
   feature?: messages.Pickle | undefined;
   testName?: string | undefined;
   startTime?: Date | undefined;
- driver!: ThenableWebDriver;
+  driver!: ThenableWebDriver;
   debug = false;
   debugLog = '';
 }

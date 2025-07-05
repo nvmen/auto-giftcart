@@ -1,18 +1,4 @@
-console.log("Cucumber configuration loaded");
-// module.exports = {
-//   default: {
-//     require: [
-//       './src/**/*.ts',
-//       './src/features/step-definitions/**/*.ts', // Step definitions
-//       './src/support/**/*.ts'                    // World, hooks
-//     ],
-//     requireModule: ['ts-node/register'],
-//     paths: ['src/features/**/*.feature'],
-//     format: ['progress'],
-//     timeout: 60000
-//   }
-// };
-
+console.log("Cucumber configuration load test");
 
 const config = {
   import: ['src/**/*.ts'],

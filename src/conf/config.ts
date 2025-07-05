@@ -9,5 +9,9 @@ export const Config = {
     outputDir: 'reports',
     screenshotsDir: 'screenshots',
     jsonReportPath: 'reports/cucumber-report.json'
+  },
+  browserScreen: {
+    width: 1280,
+    height: 1024
   }
-}
+};

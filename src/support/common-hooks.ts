@@ -5,7 +5,6 @@ import * as firefox from 'selenium-webdriver/firefox.js';
 import { Config } from '../conf/config';
 
 async function createDriver(): Promise<ThenableWebDriver> {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const options = new firefox.Options();
   options.addArguments('--disable-gpu');
   options.addArguments('--window-size=1280,800');
