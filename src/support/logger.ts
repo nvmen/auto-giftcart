@@ -51,3 +51,7 @@ export const logError = (error: Error | string, context?: string): void => {
     : `${ctx} - ${String(error)}`;
   logger.error(`ERROR: ${message}`);
 };
+export const logResultsTest = (name: string, context?: string): void => {
+  const ctx = context ?? '';
+  logger.info(`Result:  ${String(name)} - ${ctx}`);
+};

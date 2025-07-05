@@ -5,7 +5,7 @@ const config = {
   format: [
     // 'message:e2e/reports/cucumber-report.ndjson',
     'json:reports/cucumber-report.json',
-    'html:reports/report.html',
+    //'html:reports/report.html',
     'summary',
     'progress-bar'
   ],
@@ -18,4 +18,5 @@ if (process.env.USE_ALLURE) {
 } else {
   config.format.push('@cucumber/pretty-formatter');
 }
+
 export default config;
