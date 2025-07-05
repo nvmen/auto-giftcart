@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "cucumber": "tsx node_modules/@cucumber/cucumber/bin/cucumber.js",
-    "report": "tsx src/support/reporters/report.ts",
+    "report": "node src/support/reporters/report.js",
     "build": "rimraf build && npm run format && npm run lint && tsc && npm run cucumber-check",
     "format": "prettier --write \"**/*.{ts,tsx,css,html}\" ",
     "lint": "eslint --fix",

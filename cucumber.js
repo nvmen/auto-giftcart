@@ -2,7 +2,10 @@ console.log("Cucumber configuration load test");
 import dotenv from 'dotenv';
 dotenv.config();
 const config = {
-  import: ['src/**/*.ts'],
+  import: [
+    '!src/support/reporters/report.ts', // Exclude the report.ts file to avoid circular dependencies,
+    'src/**/*.ts'    
+  ],
   format: [
     // 'message:e2e/reports/cucumber-report.ndjson',
     'json:reports/cucumber-report.json',
