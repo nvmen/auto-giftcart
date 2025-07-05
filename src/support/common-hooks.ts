@@ -48,6 +48,8 @@ After(async function (this: ICustomWorld & { attach: Function }, { result }: ITe
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
   fs.writeFileSync(screenshotPath, screenshot, 'base64');
   // TODO: Attach screenshot to the report
+  this.attach(screenshot, 'image/png');
+  
   if (result) {
     switch (result?.status.toLowerCase()) {
       case 'passed':

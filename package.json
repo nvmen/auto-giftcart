@@ -7,6 +7,7 @@
   "scripts": {
     "cucumber": "tsx node_modules/@cucumber/cucumber/bin/cucumber.js",
     "report": "node src/support/reporters/report.js",
+    "report:multi": "node src/support/reporters/multi-report.cjs",
     "build": "rimraf build && npm run format && npm run lint && tsc && npm run cucumber-check",
     "format": "prettier --write \"**/*.{ts,tsx,css,html}\" ",
     "lint": "eslint --fix",
@@ -39,7 +40,7 @@
     "eslint-config-prettier": "10.1.2",
     "eslint-plugin-prettier": "5.3.1",
     "fs-extra": "11.3.0",
-    "multiple-cucumber-html-reporter": "^3.9.2",
+    "multiple-cucumber-html-reporter": "^3.9.3",
     "open": "10.1.2",
     "pixelmatch": "7.1.0",
     "pngjs": "7.0.0",
